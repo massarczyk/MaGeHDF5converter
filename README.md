@@ -14,3 +14,6 @@ Problems I have
   
 - troubles with the MGMCRun (an MGDO class) there is the 
   std::map< std::string, int > fSensitiveVolumeIDs with a function using it. But I cant access the map itself
+
+
+  UPDATE: Talked with Clint. As far as he remembers from the h5py book strings are not compressed. SO this is a problem. I will do a work around with a look up table for Detectornames and processes
