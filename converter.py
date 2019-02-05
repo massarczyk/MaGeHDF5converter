@@ -260,9 +260,10 @@ def main(argv):
 	#data types
 	float_dt = h5py.special_dtype(vlen=np.dtype('f')) 
 	int_dt = h5py.special_dtype(vlen=np.dtype('i')) 
-#	string_dt = h5py.special_dtype(vlen=str) 
 	string1_dt = h5py.special_dtype(vlen=np.dtype('S{0}'.format(max(map(len,List_StepProcessName))))) 
 	string2_dt = h5py.special_dtype(vlen=np.dtype('S{0}'.format(max(map(len,List_StepPhysVolName))))) 
+	string1_dt = h5py.special_dtype(vlen=str) 
+	string2_dt = h5py.special_dtype(vlen=str) 
 	bool_dt = h5py.special_dtype(vlen=np.dtype('b')) 
 
 	###RunInfos attached to File as attributes
